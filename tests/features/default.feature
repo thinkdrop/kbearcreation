@@ -3,6 +3,8 @@ Feature: Behat tests work out of the box.
   As a devshop developer
   I need Behat tests to be setup and able to run out of the box.
 
+  @api
   Scenario: Make sure we can run bin/behat
-    Given I run "pwd"
-    And I run "bin/behat -dl --colors"
+    Given I am on the homepage
+    Then I should see "Super easy vegetarian pasta bake"
+    And I should see "Hi THere"
