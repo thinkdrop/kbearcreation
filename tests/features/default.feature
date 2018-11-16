@@ -6,3 +6,4 @@ Feature: Behat tests work out of the box.
   Scenario: Make sure we can run bin/behat
     Given I am on the homepage
     Then I should see "Super easy vegetarian pasta bake"
+    And I should see "Hi"
